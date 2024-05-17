@@ -15,10 +15,17 @@
       </container>
     </Application>
   </div>
+
+  <pre class="bg-white fixed bottom-0 right-0 text-sm p-3 max-w-72 overflow-auto w-full z-10">{{ debug }}</pre>
 </template>
 
 <script setup lang="ts">
-import { Application } from 'vue3-pixi';
+import { Application } from 'vue3-pixi'
+import { Game } from '@/game/models'
+
+const debug = {
+  game: new Game()
+}
 
 const win = window
 </script>
