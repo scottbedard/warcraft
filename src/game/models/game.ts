@@ -1,5 +1,5 @@
-import { Pud } from './pud'
+import { Vec } from '@/game/types'
 
 export class Game {
-  public Pub = new Pud()
+  public size: Vec<2> = [64, 64]
 }
